@@ -62,7 +62,7 @@ body{
 
 
 #video{
-	height: 600px;
+	height: 800px;
 	position: relative;
 	overflow: hidden;
 }
@@ -80,7 +80,7 @@ video {
 
 .contentOver{
 	position: absolute;
-	top: 150px;
+	top: 250px;
 	width: 100%;
 	display: flex;
 	flex-direction:column;
@@ -95,27 +95,39 @@ video {
 .boldContent{
 	color: white;
 	font-size: 35px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .Content{
 	color: white;
 	font-size: 25px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 150px;
+	padding-right: 150px;
 }
 
 h1{
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: bold;
 
 }
 
 p{
-	font-size: 16px;
-	font-style: italic;
+	font-size: 20px;
+	font-weight: 550;
 }
+
+.boldEco{
+	margin: 0px;
+}
+
+.ContentEco{
+	margin: 0px;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+
 
 @media(max-width: 1100px){
 	.boldContent{
@@ -134,7 +146,7 @@ p{
 	font-size: 20px;
 	font-weight: bold;
 	color: white;
-	border-radius: 10px;
+	border-radius: 30px;
 	background: darkblue;
   	padding: 10px 55px 10px 20px; /* Increase left padding for arrow */
   	border: none; /* Remove button border */
@@ -148,7 +160,7 @@ p{
 	  content: "→"; /* Right arrow character */
 	  position: absolute;
 	  right: 20px; /* Initial position outside the button */
-	  top: 45%; /* Vertically center the arrow */
+	  top: 50%; /* Vertically center the arrow */
 	  transform: translateY(-50%); /* Adjust vertical position */
 	  opacity: 1; /* Initially visible */
 	  font-size:25px; 
@@ -171,7 +183,7 @@ p{
   	color: #000000;
   	padding: 0px 50px 0px 50px;
 	height: 350px;
-	line-height: 2.5;
+	line-height: 1.8;
 
 }
 
@@ -190,7 +202,7 @@ p{
 .over-image{
 	padding: 5%;
 	height: 40%;
-	background: lightblue;
+	background: rgba(0, 0, 0, 0.49);
 	z-index: 1;
 	position: absolute;
 	top: 60%;
@@ -199,15 +211,18 @@ p{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	backdrop-filter: blur(40px);
 	transition: height 0.3s ease, top 0.3s ease, opacity 0.3s ease;
 }
 
 .boldOver{
 	font-size: large;
+	color: white;
 }
 
 .ContentOver{
 	font-size: medium;
+	color: white;
 }
 
 .servicePane:hover  p{
@@ -227,11 +242,11 @@ p{
 }
 
 .over-image:hover .boldOver{
-	font-size: larger;
+	font-size: x-large;
 }
 
 .over-image:hover .ContentOver{
-	font-size: large;
+	font-size: larger;
 	opacity: 1;
 	height: none;
 	margin: none;
@@ -299,7 +314,7 @@ p{
 
 .highlights{
 	position: absolute;
-	top: 1700px;
+	top: 1895px;
 	display: flex;
 	flex-direction:row;
 	justify-content: center;
@@ -375,20 +390,27 @@ p{
 	min-height: 851px;
 }
 
-#circle {
-    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
-    max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+
+
+.circleInside {
+	display: flex;
+	border: 30px #604fd8 solid;
+	border-radius: 50%;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	aspect-ratio: 1/1;
+
 }
 
-
 #highlightsText{
-	font-size: large;
+	font-size: x-large;
 	font-weight: bold;
 	margin-bottom: 0px;
 }
 
 #HighlightsNumber{
-	font-size: xxx-large;
+	font-size: 70px;
 	margin: 0px;
 	color: #604fd8;
 }
@@ -522,7 +544,7 @@ p{
 }
 .last {
     position: absolute;
-    top: 3300px;
+    top: 3495px;
     width: 100%;
     height: 1000px;
     z-index: 2;
@@ -530,7 +552,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #468be2;
+    background-color: #f4f6ff;
 }
 
 .background-images {
@@ -545,8 +567,8 @@ p{
     background-size: cover;
     height: 100%;
     width: 100%;
-    background-color: #468be2;
-    background-image: url('content/images/cloud.png');
+    /*background-color: #468be2;*/
+    /*background-image: url('content/images/cloud.png');*/
     top: -1500px;
     transition: transform 0.3s ease;
 }
@@ -570,7 +592,7 @@ p{
 	font-size: 20px;
 	font-weight: bold;
 	color: white;
-	border-radius: 10px;
+	border-radius: 30px;
 	background: darkblue;
   	padding: 10px 55px 10px 20px; /* Increase left padding for arrow */
   	border: none; /* Remove button border */
@@ -584,7 +606,7 @@ p{
 	  content: "→"; /* right arrow character */
 	  position: absolute;
 	  right: 20px; /* initial position outside the button */
-	  top: 45%; /* vertically center the arrow */
+	  top: 50%; /* vertically center the arrow */
 	  transform: translatey(-50%); /* adjust vertical position */
 	  opacity: 1; /* initially visible */
 	  font-size:25px; 
@@ -600,8 +622,8 @@ p{
 	position: absolute;
 	width: 100%;
 	background-color: #04011c;
-	top: 4175px;
-	height: 200px;
+	top: 4442px;
+	height: 235px;
 	z-index: 5;
   }
 
@@ -658,26 +680,38 @@ footer{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
+	border: white solid;
+	border-radius: 30px;
+	height: 40px;
+	padding-right: 5px;
 }
 
 #submitPlace input{
-	background-color: #0e1724;
-	width: 90%;
+	width: 60%;
+	background-color: transparent;
 	height: 20px;
 	z-index: 1;
+	border: none;
+	outline:  none;
 	color: white;
+	padding-left: 5%;
 }
 
-::placeholder{
+#email::placeholder{
+	color: white ;
 	opacity: 1;
-	color: white;
 }
 
 #submitPlace button{
 	z-index: 2;
 	display: flex;
-	width: 20%;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
 	height: 25px;
+	border: none;
+	border-radius: 20px;
 	background-color: darkblue;
 	color: white;
 	font-weight: bold;
@@ -689,41 +723,11 @@ footer{
 
 
 @media(max-width: 1700px){
-	.highlights{
-		flex-direction: column;
-		height: 1200px;
-		top: 1725px;
-	}
-	
-	#written{
-		width: 100%;
-	}
-
-	#graphicMeasure img{
-		width: 750px;
-		min-height: 920px;
-	}
 
 	#heading-highlights{
 		text-align: center;
 	}
 
-	#graphicMeasure{
-		width: 100%;
-	}
-
-	.testimonials{
-		top: 1200px;
-	}
-
-	.last{
-		top: 3800px;
-	}
-
-	.cloud{
-		top: -1300px;
-	}
-	
 	footer .logo{
 		flex-direction: column;
 		padding-bottom: 10px;
@@ -763,10 +767,6 @@ footer{
 	.userful p{
 		font-size: smaller;
 	}
-	
-	.footer-div{
-		top: 4600px;
-	}
 }
 
 @media(max-width: 1300px ){
@@ -775,7 +775,6 @@ footer{
 		min-height: 400px;
 	}
 	.over-image{
-		top: 30%;
 		justify-content: unset;
 
 	}
@@ -788,19 +787,51 @@ footer{
 	}
 
 	.highlights{
-		top: 1390px;
+		top: 1750px;
 	}
 	
-	.servicePane:hover .over-image{
-		top: 0;
+	.last {
+		top: 3350px;
 	}
-
-
+	
+	.footer-div {
+		top: 4200px;
+		height: 254px;
+	}
 
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px)and (max-width: 1200px){
+	#services {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		height: 1200px;
+	}
 
+	.servicePane {
+		width: auto;
+	}
+
+	.highlights {
+		top: 2350px;
+	}
+	
+	.last {
+		top: 3950px;
+	}
+
+	.footer-div {
+		top: 4950px;
+	}
+}
+
+@media (max-width: 1000px) {
+	
+	.ContentEco {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	
 	#navBar{
 		height: 120px;
 	}
@@ -829,7 +860,7 @@ footer{
   	}
 	
 	#mobileNavContainer {
-			display: block;
+		display: block;
     		position: fixed;
     		top: 0;
     		right: -300px; /* Initially hidden off the screen */
@@ -915,6 +946,15 @@ footer{
 	.highlights{
 		top: 5250px;
 		height: 1450px;
+		flex-direction: column;
+	}
+	
+	#written{
+		width: 100%;
+	}
+	
+	#graphicMeasure{
+		width: 100%;
 	}
 	
 	#heading-highlights{
@@ -982,17 +1022,37 @@ footer{
 	}
 	
 	.footer-content{
-		width: 70%;
+		width: 100%;
+	}
+	
+	.footer-content p{
+		margin-top: 0px;
+	}
+
+	.footer-content h1{
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
+	
+	.signup h1{
+		margin: 0px;
+		margin-bottom: 10px;
+	}
+
+	.signup p{
+		margin-top: 0px;
 	}
 
 	#submitPlace{
 		justify-content: left;
+		height: 60px;
+		width: 70%;
 	}
 
 	#submitPlace input{
 		font-size: larger;
 		height: 40px;
-		width: 70%;
+		width: 75%;
 	}
 	
 	#submitPlace #emailSubmit{
@@ -1001,14 +1061,17 @@ footer{
 		font-size: larger;
 		height: 45px;
 	}
-
+	
 	#submitPlace #emailSubmit{
 		text-align: center; /* Center text horizontally */
  	 	vertical-align: middle; /* Center text vertically */
   		line-height: normal; /* Reset the line-height to normal */
  	 	padding: 10px 10px;
 	}
-
+	
+	.userful h1{
+		margin-top: 0px;
+	}
 
 	footer{
 		flex-direction: column;
@@ -1108,4 +1171,22 @@ footer{
 	
 }
 
+.links {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.userful h1{
+	margin-top: 10px;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+.links p {
+	margin: 5px;
+	font-size: 15px;
+}
+
+.social-media i{
+	color: white;
+}
 /*TODO: circle in alignement , check overimage words;*/

@@ -1,0 +1,202 @@
+
+#mobileMenuIcon{
+	display: none;
+	cursor: pointer;
+	font-size: 30px;
+	color: white;
+	margin-right: 10px;
+
+}
+
+#mobileNavContainer{
+	display: none; 
+}
+
+h1{
+	margin: 10px;
+	font-size: 50px;
+}
+
+p{
+	font-style: italic;
+	font-size: 22px;
+}
+
+img{
+	width: 200px;
+	margin-top: 10px;
+}
+
+
+h3{
+	margin: 10px;
+	font-size: 50px;
+	text-align: center;
+}
+
+
+
+.who{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	text-align: center;
+}
+
+.services{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	align-items: center;
+	padding: 30px;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.development{
+	margin: 30px;
+	border: black solid;
+	border-radius: 20px 20px 20px 20px;
+}
+
+.AiMachine{
+	margin: 30px;
+	border: black  solid;
+	border-radius: 20px 20px 20px 20px;
+}
+
+.threeD{
+	margin: 30px;
+	border: black solid;
+	border-radius: 20px 20px 20px 20px;
+	
+}
+
+.graphic{
+	margin: 30px;
+	border: black solid;
+	border-radius: 20px 20px 20px 20px;
+
+}
+
+.digital{
+	margin: 30px;
+	border: black solid;
+	border-radius: 20px 20px 20px 20px;
+}
+
+.hosting{
+	margin: 30px;
+	border: black solid;
+	border-radius: 20px 20px 20px 20px;
+}
+
+
+.choose{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	text-align: center;
+	padding: 30px;
+}
+
+.choose img{
+	width: 100px;
+}
+
+.choose p{
+	font-size: larger;
+}
+
+.choose-container{
+	margin: 30px;
+	border: black solid;
+	border-radius: 20px 20px 20px 20px;
+
+}
+
+.footer-div{
+	display: static;
+}
+
+#join{
+	position: absolute;
+	z-index: -1;
+	right: 0%;
+	width: 800px;
+	height: 600px;
+
+}
+
+.journey p{
+	margin: 10px;
+	width: 50%;
+}
+
+
+@media (max-width: 1000px) {
+ /* Hide the desktop navigation links */
+	#desktopNav {
+    		display: none;
+  	}
+
+  /* Show the hamburger menu icon on mobile */
+  	#mobileMenuIcon {
+   	 	display: block;
+		font-size: xx-large;
+  	}
+	
+	#mobileNavContainer {
+		display: block;
+    		position: fixed;
+    		top: 0;
+    		right: -300px; /* Initially hidden off the screen */
+    		width: 300px;
+    		height: 100%;
+    		background: #04011c;
+    		z-index: 200;
+    		overflow-y: auto;
+    		transition: right 0.3s ease;
+  	}
+  /* Show the mobile navigation links when the mobile menu is active */
+  	#mobileNavContainer.active{
+  		right: 0;
+	}
+
+	#mobileNav{
+		display: flex;
+		flex-direction: column;
+		font-size: 30px;
+		padding: 20px;
+	}
+
+	#mobileNav a{
+		padding-bottom: 50px;	
+	}
+
+	#closeButton {
+		display: flex;
+		justify-content: center;
+		font-size: 80px;
+		color: #e6e2e2;
+		cursor: pointer;
+		text-align: right;
+  	}
+
+
+	.services{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 30px;
+		text-align: center;
+		justify-content: space-between;
+	}
+	
+	.choose{
+		grid-template-columns: auto auto;
+	}
+
+	.choose-container{
+		margin: 10px;
+	}
+}
